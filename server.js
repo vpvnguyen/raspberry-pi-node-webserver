@@ -3,7 +3,7 @@ const path = require('path');
 
 const express = require('express');
 const exphbs = require('express-handlebars');
-const routing = require('./routing/routes.js');
+const routing = require('./routing/index.js');
 const controllers = require('./controllers/app.controller.js');
 
 // // LOGGING
