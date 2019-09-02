@@ -23,22 +23,9 @@ The intention of this product is to create a Node.js webserver on your raspberry
 - Go to https://nodejs.org/en/download/
 - Download version specific to your Raspberry Pi's ARM
 
-<!-- server {
-        listen 80 default_server;
-        listen [::]:80 default_server;
-
-        root /var/www/html;
-
-        index index.html index.htm index.nginx-debian.html;
-
-        server_name _;
-
-        location / {
-                proxy_pass http://localhost:3000;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection 'upgrade';
-                proxy_set_header Host $host;
-                proxy_cache_bypass $http_upgrade;
-        }
-} -->
+# vscode
+- Open raspberry pi terminal
+- Remove any failing build: `sudo apt-get purge code-oss`
+- Install downgraded working version: `sudo apt-get install code-oss=1.29.0-1539702286`
+- Prevent auto update: `sudo apt-mark hold code-oss`
+- UNDO prevent auto update: `sudo apt-mark unhold code-oss`
