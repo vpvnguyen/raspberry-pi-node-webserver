@@ -29,3 +29,10 @@ The intention of this product is to create a Node.js webserver on your raspberry
 - Install downgraded working version: `sudo apt-get install code-oss=1.29.0-1539702286`
 - Prevent auto update: `sudo apt-mark hold code-oss`
 - UNDO prevent auto update: `sudo apt-mark unhold code-oss`
+
+# plex
+- Follow: https://support.plex.tv/articles/200288586-installation/#toc-1
+- Download installer
+- cd into installer dir
+- `sudo dpkg -i <DOWNLOADED_FILENAME>.deb`
+- Configure at: http://127.0.0.1:32400/web
