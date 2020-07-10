@@ -15,6 +15,7 @@ The intention of this product is to create a Node.js webserver on your raspberry
 > Installation can take 45+ mins.
 
 # Setup - Node.js Server
+### Install in Raspian
 - Boot into Raspian.
 - Navigate to Preferences > Raspberry Pi Configuration
 - Enable VNC
@@ -22,6 +23,12 @@ The intention of this product is to create a Node.js webserver on your raspberry
 - Terminal: `uname -m`
 - Go to https://nodejs.org/en/download/
 - Download version specific to your Raspberry Pi's ARM
+### Over SSH
+- SSH must be enabled on raspberry pi
+- SSH into pi `ssh pi@<ip_address>`
+- Visit [NodeSource](https://github.com/nodesource/distributions/blob/master/README.md) for latest release
+- Update package manager `sudo apt update`
+- Follow instructions to install using curl
 
 # vscode
 - Open raspberry pi terminal
